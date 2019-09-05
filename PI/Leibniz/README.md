@@ -1,4 +1,4 @@
-# 
+# Decimales de PI con Formula de Leibniz
 
 ```c
 #include <stdio.h>
