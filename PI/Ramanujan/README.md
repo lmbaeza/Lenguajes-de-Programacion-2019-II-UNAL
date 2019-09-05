@@ -74,4 +74,19 @@ int main() {
 // = 1.617 / 10 = 0.1617 Ms
 ```
 
+### Makefile
+
+```
+app: clean PI.o
+
+PI.o: main.o
+	gcc main.o -lm  -o PI.o && ./PI.o
+
+main.o:
+	gcc -c main.c -lm  -o main.o
+
+clean:
+	rm -f *.o
+```
+
 ![Formula de Ramanujan](https://images.theconversation.com/files/74718/original/image-20150312-13520-18pyzln.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip)
