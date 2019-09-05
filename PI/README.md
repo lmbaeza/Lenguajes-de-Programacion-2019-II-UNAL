@@ -1,7 +1,7 @@
 # PI Ramanujan Vs Leibniz
 
-* Ramanujan:  0.1617 Ms
-* Leibniz:    4643.542 Ms
+* **Ramanujan:**   *0.1617 Ms* Con `n=66`
+* **Leibniz:**    *4643.542 Ms* Con `n=1e09`
 
 ### Ramanujan
 
