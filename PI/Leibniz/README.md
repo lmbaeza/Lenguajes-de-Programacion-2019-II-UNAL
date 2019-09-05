@@ -1,4 +1,4 @@
-# Decimales de PI con Formula de Leibniz
+# 
 
 ```c
 #include <stdio.h>
@@ -57,6 +57,19 @@ int main() {
 ```
 
 ### Makefile
+
+```
+app: clean PI.o
+
+PI.o: main.o
+	gcc main.o -lm  -o PI.o && ./PI.o
+
+main.o:
+	gcc -c main.c -lm  -o main.o
+
+clean:
+	rm -f *.o
+```
 
 
 ![Formula de Leibniz para calcular Pi](https://imgur.com/9dcPQfP.png)
